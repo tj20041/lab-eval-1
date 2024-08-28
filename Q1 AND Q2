@@ -1,0 +1,61 @@
+Q1
+def process_string(input_string, n):
+    
+    swapped_string = input_string.replace(',', 'TEMP').replace('.', ',').replace('TEMP', '.')
+
+
+    lowercase_part = swapped_string[:n].lower()
+    uppercase_part = swapped_string[n:].upper()
+    
+    result = lowercase_part + uppercase_part
+    return result
+
+
+input_string = input("enter string")
+n = int(input("enter number"))
+
+
+output = process_string(input_string, n)
+print(output)
+
+
+#"Yes,Real time monitoring, Immediate alerts."
+
+
+
+
+Q2
+counta= counte= counti= counto=countu=0
+count =0
+
+word=input("enter sentence")
+
+
+for char in word:
+    if(char=='a'):
+        counta=counta+1
+        count=count+1
+    if(char=="e"):
+        counte=counte+1
+        count=count+1
+    if (char=="i"):
+        counti+counti+1
+        count=count+1
+    if (char=="o"):
+        counto=counto+1
+        count=count+1
+    if(char=="u"):
+        countu=countu+1
+        count=count+1
+
+print("vowels: ",count)
+if(counta==1):
+    print("a")
+if(counte==1):
+    print("e")
+if(counti==1):
+    print("i")
+if(counto==1):
+    print("o")
+if(countu==1):
+    print("u")
